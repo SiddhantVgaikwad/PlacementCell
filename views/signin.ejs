@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+
+		<title>Sign In</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"> 
+	</head>
+	<body style="background-color:rgb(154, 218, 250);">
+
+	<div class="main" style="background-color: rgb(154, 218, 250);;">	
+	<section class="sign-in">
+		<div class="container" style="box-shadow: 0px 0px 10px 20px rgb(236, 245, 241);">
+			<div class="signin-content">
+				<div class="signin-image">
+					<figure><img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signin-image.jpg" alt="sing up image"></figure>
+				</div>
+
+
+				<div class="signin-form">
+					<h2 class="form-title">Sign in</h2>
+
+
+			  <form action="/users/create-session" method="POST" class="register-form" id="login-form">
+				 <!-- Email input -->
+				 <div class="form-group">
+					<label class="form-label" for="email">&#128231;</label>
+					<input type="email"  id="email" placeholder="abc@email.com" name="email" required />
+				 </div>
+
+				 <!-- Password input -->
+				 <div class="form-group">
+					<label for="password">&#128274;</label>
+					<input type="password" id="password" class="form-control" name="password" required />
+				 </div>
+
+				 <!-- Submit button -->
+				 <div class="form-group form-button">
+				 <button type="submit" class="form-submit" >Sign in</button>
+				 </div>
+
+				 <!-- Register buttons -->
+				   <div class="signup-image-link">
+					  <p>No Account? <a href="/users/signup">Register</a></p>
+				   </div>
+			   </form>
+			  </div>
+		    </div>
+		</div>
+		</section>
+		</div>
+	</body>
+</html>

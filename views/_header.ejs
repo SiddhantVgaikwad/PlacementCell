@@ -1,0 +1,20 @@
+<header style="font-weight: bold;">
+	<% if (locals.user) { %>
+	<nav class="navbar navbar-dark " style="background-color: rgb(7, 72, 129); font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+		<div class="container-fluid">
+		
+			<a class="navbar-brand" href="/">👤<%=locals.user.name%></a>
+			<a class="navbar-brand" href="/">PLACEMENT CELL</a>
+			
+			
+			<form class="d-flex px-4">
+				<a class="navbar-brand p-2" href="/company/home">Company List</a>
+				<a class="navbar-brand p-2" href="/users/download-csv">⬇️Download Report</a>
+				<a class="navbar-brand p-2" href="/users/signout" style="background-color: red; border-radius: 5px">👤Sign out</a>
+
+			
+			</form>
+		</div>
+	</nav>
+	<% } %>
+</header>
