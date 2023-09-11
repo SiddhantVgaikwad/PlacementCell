@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.set('strictQuery',true);
-const DB = 'mongodb+srv://deadpool:ironman@project.hlhbwnd.mongodb.net/?retryWrites=true&w=majority'
+mongoose.set('strictQuery',false);
+require('dotenv').config();
+const DB = 'mongodb+srv://deadpool:ironman@project.hlhbwnd.mongodb.net/?retryWrites=true&w=majority' || process.env.MONGO_URL;
 
 mongoose.connect(DB, {
 	useNewUrlParser: true,
